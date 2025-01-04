@@ -100,9 +100,10 @@ body {
     "calc_equal calc_equal calc_equal calc_equal";
   text-align: center;
 }
-.calc div {
+.calc button {
   border: solid 1px #d0d0d0;
   padding: 4vh 0 0;
+  font-size: 2rem;
 }
 
 .calc_clear {
