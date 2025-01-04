@@ -1,0 +1,174 @@
+:root {
+  --white: #fff;
+  --primary: #f6f6f6;
+  --primary-hover: #d4d4d4;
+  --secondary: #101b55;
+  --secondary2: #dee1ff;
+  --secondary2-hover: #c7cbee;
+  --text: #313136;
+  --text-secondary: #f2361c;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.6fr 1.4fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "screen"
+    "calc";
+  margin: 0;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+.screen h1 {
+  font-size: 16px;
+  text-align: center;
+}
+.screen {
+  grid-area: screen;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 2rem;
+  padding: 0 5%;
+}
+.screen_result {
+  font-weight: 700;
+}
+
+.calc {
+  grid-area: calc;
+  font-size: 2rem;
+}
+
+.calc_operation {
+  background-color: var(--secondary2);
+  --text: #313136;
+  cursor: pointer;
+}
+.calc_operation:hover {
+  background-color: var(--secondary2-hover);
+  font-size: 2.2rem;
+  font-family: 500;
+}
+.calc_equal {
+  background-color: var(--secondary);
+  color: var(--white);
+  cursor: pointer;
+  opacity: 0.95;
+}
+.calc_equal:hover {
+  font-size: 2.2rem;
+  font-family: 500;
+  background-color: var(--secondary);
+  opacity: 1;
+}
+.calc_clear {
+  background-color: var(--primary);
+  color: var(--text-secondary);
+}
+.calc_clear:hover,
+.calc_namber:hover {
+  font-size: 2.2rem;
+  font-family: 500;
+  background-color: var(--primary-hover);
+  cursor: pointer;
+}
+.calc_namber {
+  background-color: var(--primary);
+}
+
+.calc {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "calc_clear calc_0 calc_dot calc_addition"
+    "calc_1 calc_2 calc_3 calc_subtraction"
+    "calc_4 calc_5 calc_6 calc_multiplication"
+    "calc_7 calc_8 calc_9 calc_division"
+    "calc_equal calc_equal calc_equal calc_equal";
+  text-align: center;
+}
+.calc div {
+  border: solid 1px #d0d0d0;
+  padding: 4vh 0 0;
+}
+
+.calc_clear {
+  grid-area: calc_clear;
+}
+
+.calc_0 {
+  grid-area: calc_0;
+}
+
+.calc_dot {
+  grid-area: calc_dot;
+}
+
+.calc_addition {
+  grid-area: calc_addition;
+}
+
+.calc_subtraction {
+  grid-area: calc_subtraction;
+}
+
+.calc_multiplication {
+  grid-area: calc_multiplication;
+}
+
+.calc_division {
+  grid-area: calc_division;
+}
+
+.calc_1 {
+  grid-area: calc_1;
+}
+
+.calc_2 {
+  grid-area: calc_2;
+}
+
+.calc_3 {
+  grid-area: calc_3;
+}
+
+.calc_4 {
+  grid-area: calc_4;
+}
+
+.calc_5 {
+  grid-area: calc_5;
+}
+
+.calc_6 {
+  grid-area: calc_6;
+}
+
+.calc_7 {
+  grid-area: calc_7;
+}
+
+.calc_8 {
+  grid-area: calc_8;
+}
+
+.calc_9 {
+  grid-area: calc_9;
+}
+
+.calc_equal {
+  grid-area: calc_equal;
+}
